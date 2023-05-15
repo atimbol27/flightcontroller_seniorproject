@@ -1,0 +1,18 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/alextimbol/softAP/build/bootloader/esp-idf/esptool_py && /home/alextimbol/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/alextimbol/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/alextimbol/softAP/build/bootloader/bootloader.bin
+Bootloader binary size 0x6740 bytes. 0x8c0 bytes (8%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/softap_example_main.c.obj
+../main/softap_example_main.c:277:13: warning: 'disconnect_handler' defined but not used [-Wunused-function]
+  277 | static void disconnect_handler(void* arg, esp_event_base_t event_base,
+      |             ^~~~~~~~~~~~~~~~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable wifi_softAP.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated /home/alextimbol/softAP/build/wifi_softAP.bin
+[7/7] cd /home/alextimbol/softAP/build/esp-idf/esptool_py && /home/alextimbol/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/alextimbol/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/alextimbol/softAP/build/partition_table/partition-table.bin /home/alextimbol/softAP/build/wifi_softAP.bin
+wifi_softAP.bin binary size 0xc92f0 bytes. Smallest app partition is 0x100000 bytes. 0x36d10 bytes (21%) free.
